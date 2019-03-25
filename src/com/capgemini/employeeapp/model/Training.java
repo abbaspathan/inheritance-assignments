@@ -1,6 +1,6 @@
 package com.capgemini.employeeapp.model;
 
-public class Training {
+public abstract class Training {
 
 	private int traningId;
 	private String subject;
@@ -41,4 +41,6 @@ public class Training {
 	public void setFees(double fees) {
 		this.fees = fees;
 	}
+
+	public abstract double getOrderValue();
 }
